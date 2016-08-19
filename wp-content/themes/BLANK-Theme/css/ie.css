@@ -1,0 +1,43 @@
+/**
+ * @author Fábio Miranda Costa <fabiomcosta@gmail.com>
+ * http://www.meiocodigo.com
+ */
+ div#login div#geral form fieldset{
+	_margin:90px 0 0 240px;
+}
+ div#topo,div.brd_geral_tl,div.brd_geral_tr,div#rodape,div.brd_geral_bl,div.brd_geral_br{
+	_background-image:url(../images/bordas_geral_ie.jpg);
+}
+ div#sombra_esq{
+	_background-image:url(../images/borda_geral_esq_ie.jpg);
+}
+div#sombra_dir{
+	_background-image:url(../images/borda_geral_dir_ie.jpg);
+}
+div#geral div#esq div#menu div.brd_menu_br{
+	_bottom:-1px;
+}
+div.tab_lista .brd_tl,div.tab_lista .brd_tr,div.tab_lista .brd_bl,div.tab_lista .brd_br,div#rodape div#logo_fernando_aureliano{
+	_font-size:1%;
+	_line-height:1%;
+}
+div#geral div#centro div#conteudo div.tab_lista .brd_tr{
+	_right:-1px;
+}
+div#geral div#centro div#conteudo div.tab_lista .brd_bl{
+	_bottom:-1px;
+}
+div#geral div#centro div#conteudo div.tab_lista .brd_br{
+	_right:-1px;
+	_bottom:-1px;
+}
+div#geral div#centro div#info_opcoes form fieldset input.btn{
+	_top:-32px;
+	_right:-225px;
+}
+div#geral div#centro div#conteudo{
+	_width:inherit;
+}
+div#geral div#centro div#conteudo div.tab_lista{
+	_width:100%;
+}

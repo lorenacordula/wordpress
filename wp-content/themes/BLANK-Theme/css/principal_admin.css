@@ -1,0 +1,811 @@
+/**
+ * @author F�bio Miranda Costa <fabiomcosta@gmail.com>
+ * http://www.meiocodigo.com
+ */ * {
+    margin: 0;
+    padding: 0
+}
+
+ul, ol {
+    list-style: none
+}
+
+a img, fieldset {
+    border: 0
+}
+
+img {
+    display: block
+}
+
+input.texto, input.btn, textarea.texto, select, option {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+input.texto, textarea.texto, select {
+    background: #EEEEEE;
+    border: 1px solid #C0C0C0;
+    padding: 2px;
+    font-size: 12px;
+    color: #800000;
+}
+
+
+option {
+    background: #EEEEEE;
+    padding: 0 7px;
+    font-size: 12px;
+    color: #800000;
+}
+
+div.clear {
+    clear: both
+} .pqn {
+    width: 60px
+}.pqn2 {
+    width: 70px
+}.med {
+    width: 90px
+}.grd {
+    width: 180px
+}.gig {
+    width: 250px;
+}
+
+select.pqn {
+    width: 66px
+}
+
+select.med {
+    width: 96px
+}
+
+select.grd {
+    width: 186px
+}
+
+select.gig {
+    width: 256px;
+}
+
+body {
+    background: url(../images/bg_body.jpg) repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*********************************************
+ PÁGINA DE LOGIN
+ *********************************************/
+div#login {
+    width: 761px;
+    height: 321px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -380px;
+}
+
+div#login div#geral form fieldset {
+    width: 186px;
+    margin: 35px 0 0 481px;
+    display: block;
+    float: left;
+}
+
+div#geral div#conteudo div.message {
+    border: 1px dashed black;
+    padding: 10px;
+    line-height: 140%;
+   	font-weight: 900;
+    background: #FEFFBF;
+}
+
+div#login div#geral form fieldset label {
+    color: #800000;
+    font-weight: 900;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+div#login div#geral form fieldset input.texto {
+    margin-bottom: 6px;
+}
+
+div#login div#geral form fieldset input.btn {
+    color: #800000;
+    font-weight: 900;
+    font-size: 12px;
+    border: 0;
+    display: block;
+    width: 80px;
+    height: 26px;
+    background: url(../images/icones.gif) 55px -145px no-repeat;
+    text-align: left;
+    cursor: pointer;
+    float: right;
+}
+
+/*********************************************
+ BORDAS E SOMBRAS
+ *********************************************/
+div#topo, div.brd_geral_tl, div.brd_geral_tr, div#rodape, div.brd_geral_bl, div.brd_geral_br {
+    background-image: url(../images/bordas_geral.png);
+}
+
+div#topo, div#rodape {
+    background-repeat: repeat-x;
+    height: 39px;
+    position: relative;
+}
+
+div.brd_geral_tl, div.brd_geral_tr, div.brd_geral_bl, div.brd_geral_br {
+    width: 39px;
+    height: 39px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+div#topo {
+    margin: 20px 59px 0 59px;
+    background-position: 0 -156px;
+}
+
+div.brd_geral_tl {
+    left: -39px;
+}
+
+div.brd_geral_tr {
+    background-position: 0 -78px;
+    right: -39px;
+}
+
+div#rodape {
+    background-position: 0 -195px;
+    margin: 0 59px 20px 59px;
+}
+
+div.brd_geral_bl {
+    background-position: 0 -39px;
+    left: -39px;
+}
+
+div.brd_geral_br {
+    background-position: 0 -117px;
+    right: -39px;
+}
+
+div#sombra_esq, div#sombra_dir {
+    background-repeat: repeat-y;
+}
+
+div#sombra_esq {
+    margin: 0 20px;
+    background-image: url(../images/borda_geral_esq.png);
+    background-position: left center;
+}
+
+div#sombra_dir {
+    background-image: url(../images/borda_geral_dir.png);
+    background-position: right center;
+    padding: 0 10px;
+}
+
+/*********************************************
+ GERAL
+ *********************************************/
+div#geral {
+    background: #EFEFEF;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+/*********************************************
+ TOPO
+ *********************************************/
+div#topo a.sair {
+    display: block;
+    float: right;
+    height: 19px;
+    width: 25px;
+    background: url(../images/icones.gif) 0 -175px no-repeat;
+    margin-top: 20px;
+    padding-left: 25px;
+    font-weight: 900;
+    color: #800000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+div#topo a.sair:hover {
+    text-decoration: underline;
+}
+
+/*********************************************
+ COLUNA DA ESQUERDA, COM O MENU
+ *********************************************/
+div#geral div#esq {
+    width: 241px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: absolute;
+}
+
+div#geral div#esq div#logo {
+    background: url(../images/caixa_logo_cliente.gif) no-repeat;
+    width: 233px;
+    height: 190px;
+    padding: 10px 0 0 8px;
+}
+
+div#geral div#esq div#menu {
+    width: 236px;
+    background: #800000;
+    position: relative;
+    margin-top: 30px;
+}
+
+div#geral div#esq div#menu ol li {
+    border-bottom: #660000 solid 1px;
+    border-top: #9F0000 solid 1px;
+}
+
+div#geral div#esq div#menu ol li.submenus a {
+   padding-left:37px
+}
+
+div#geral div#esq div#menu ol li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 5px 0 0 45px;
+    display: block;
+    height: 24px;
+    background: url(../images/icones.gif) 10px -195px no-repeat;
+    text-decoration: none;
+}
+
+
+div#geral div#esq div#menu ol li a:hover {
+    text-decoration: underline;
+}
+
+div#geral div#esq div#menu ol li.primeiro {
+    border-top: 0;
+    padding-top: 21px;
+    background: url(../images/bordas_menus.gif) right -24px no-repeat;
+}
+
+div#geral div#esq div#menu ol li.ultimo {
+    border-bottom: 0;
+    padding-bottom: 21px;
+    background: url(../images/borda_baixo_menu.gif) right bottom no-repeat;
+}
+
+div#geral div#esq div#menu ol li ul li {
+    border: 0;
+}
+
+div#geral div#esq div#menu ol li ul li a {
+    background: #9F0000;
+    font-size: 11px;
+    font-weight: 100;
+    height: 18px;
+    padding: 3px 0 0 27px;
+}
+
+/*********************************************
+ CENTRO
+ *********************************************/
+div#geral div#centro {
+    overflow: hidden;
+}
+
+div#geral div#centro ul#menu_topo {
+    background: #800000 url(../images/bordas_menus.gif) no-repeat;
+    height: 20px;
+    float: right;
+    width: 230px;
+    padding: 4px 0 0 15px;
+    margin-bottom: 125px;
+}
+
+div#geral div#centro ul#menu_topo li {
+    float: left;
+    border-right: solid 1px #ffffff;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+div#geral div#centro ul#menu_topo li.ultimo {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div#geral div#centro ul#menu_topo li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div#geral div#centro ul#menu_topo p {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div#geral div#centro ul#menu_topo li a:hover {
+    text-decoration: underline;
+}
+
+div#geral div#centro div#info_opcoes {
+    border-bottom: 1px solid #800000;
+    overflow: hidden;
+    clear: both;
+    margin: 0 0 34px 261px;
+    padding-right: 20px;
+    height: 45px;
+}
+
+div#geral div#centro div#info_opcoes h2 {
+    color: #800000;
+    font-size: 20px;
+    font-weight: 900;
+    float: left;
+    margin-top: 20px;
+}
+
+div#geral div#centro div#info_opcoes div.ico_lupa {
+    background: url(../images/icones.gif) no-repeat;
+    width: 35px;
+    height: 44px;
+    float: left;
+    margin-right: 5px;
+}
+
+div#geral div#centro div#info_opcoes form fieldset {
+    display: block;
+    width: 260px;
+    height: 45px;
+    float: right;
+    overflow: hidden;
+}
+
+div#geral div#centro div#info_opcoes form fieldset label {
+    color: #800000;
+    font-weight: 900;
+    margin-bottom: 3px;
+    display: block;
+}
+
+div#geral div#centro div#info_opcoes form fieldset input.texto {
+    float: left;
+}
+
+div#geral div#centro div#info_opcoes form fieldset input.btn {
+    background: url(../images/icones.gif) 0 -145px no-repeat;
+    border: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: -3px;
+    margin-left: 8px;
+}
+
+div#geral div#centro div#conteudo {
+    color: #800000;
+    margin-right: 20px;
+    margin-left: 261px;
+}
+
+div#geral div#centro div#conteudo a {
+    color: #800000;
+}
+
+div#geral div#centro div#conteudo div.tab_lista {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+div.tab_lista .brd_tl, div.tab_lista .brd_tr, div.tab_lista .brd_bl, div.tab_lista .brd_br {
+    background-image: url(../images/bordas_tabela.gif);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+}
+
+div#geral div#centro div#conteudo div.tab_lista .brd_tl {
+    background-position: -19px -19px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista .brd_tr {
+    right: 0;
+    background-position: 0 -19px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista .brd_bl {
+    bottom: 0;
+    background-position: -19px 0;
+}
+
+div#geral div#centro div#conteudo div.tab_lista .brd_br {
+    bottom: 0;
+    right: 0;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table {
+    background: #DFDFDF;
+    width: 100%;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table thead tr th, div#geral div#centro div#conteudo div.tab_lista table thead tr td {
+    border-bottom: 2px groove #EEEEEE;
+    padding: 7px 0;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro {
+    background: #EEEEEE;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td.center {
+    text-align: center;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.ico {
+    background-image: url(../images/icones.gif);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin: 0 5px;
+    width: 18px;
+    height: 19px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.edt {
+    background-position: 0 -50px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td a.edt {
+    background-position: 0 -73px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.rem {
+    background-position: 0 -121px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.ver {
+    background-image: url(../images/visualizar.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin: 0 5px;
+    width: 16px;
+    height: 16px;
+}
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td a.ver {
+    background-position: 0 -16px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td .ok {
+    background-image: url(../images/ok.jpg);
+    background-repeat: no-repeat;
+    display: block;
+	float:left;
+    margin: 0 5px;
+    width: 16px;
+    height: 16px;
+}
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td .ok {
+    background-position: 0 -16px;
+}
+
+
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.plus {
+    background-image: url(../images/plus.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td a.plus {
+     background-position: 0 -18px;
+}
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td a.remover {
+    background-image: url(../images/remover.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td a.remover {
+     background-position: 0 -18px;
+}
+
+
+
+
+div#geral div#centro div#conteudo a.rem {
+    background-position: 0 -121px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.claro td a.rem {
+    background-position: 0 -97px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.tr_conts {
+    background: #cccccc;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr.tr_conts td {
+    padding: 0;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tbody tr td div div.conts {
+    padding: 10px;
+    border: 2px groove #C0C0C0;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tfoot tr td {
+    border-top: 2px groove #EEEEEE;
+    padding: 0 15px 2px 15px;
+    text-align: right;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tfoot tr td div {
+    display: inline;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tfoot tr td form {
+    display: inline;
+    margin-left: 10px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tfoot tr td a {
+    padding: 0 3px;
+    margin: 0 2px;
+    font-size: 14px;
+}
+
+div#geral div#centro div#conteudo div.tab_lista table tfoot tr td a:hover {
+    text-decoration: none;
+}
+
+div#geral div#centro div#conteudo table.tab_form {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+div#geral div#centro div#conteudo table.tab_form tr th, div#geral div#centro div#conteudo table.tab_form tr td {
+    padding: 3px 5px;
+}
+
+div#geral div#centro div#conteudo table.tab_form tr th {
+    text-align: right;
+}
+
+div#geral div#centro div#conteudo table.tab_form tr td input.marq {
+    margin-left: 8px;
+}
+
+div#geral div#centro div#conteudo div.submit input.btn {
+    border: 3px solid #800000;
+    background: #c0c0c0;
+    color: #800000;
+    cursor: pointer;
+}
+
+div#geral input.btn {
+    border: 3px solid #800000;
+    background: #c0c0c0;
+    color: #800000;
+    cursor: pointer;
+}
+
+div#geral input.add {
+    margin-bottom: 15px;
+}
+
+div#geral div#centro div#conteudo div.input {
+    margin-bottom: 8px;
+}
+
+div#geral div#centro div#conteudo div.input label {
+    width: 120px;
+    margin-right: 2px;
+    display: block;
+    float: left;
+    border-bottom: 1px solid #CFCFCF;
+    padding-bottom: 5px;
+}
+
+div#geral div#centro div#conteudo div.message {
+    border: 1px dashed black;
+    padding: 10px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    font-weight: 900;
+    background: #FEFFBF;
+}
+
+div#geral div#centro div#conteudo div.error-message {
+    background: #FF2828;
+    padding: 3px;
+    color: #FFFFFF;
+    margin: 5px 0 5px 0;
+    border: dashed 1px black;
+    width: 300px;
+} .form-error, .erro, .vermelho, .cancelado, .inativo {
+    background: #FFDFDF;
+}
+
+/*********************************************
+ RODAPE
+ *********************************************/
+div#rodape div#logo_fernando_aureliano {
+    background: url(../images/fernando_aureliano_marca.gif) no-repeat;
+    width: 133px;
+    height: 9px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+/*********************************************
+ CONTE�DO NAS LISTAGENS
+ *********************************************/ .conts {
+    width: 97.5%;
+    float: left;
+} .contents {
+    clear: both;
+    width: 97.5%;
+    float: left;
+} .contents .tit {
+    width: 15%;
+    float: left;
+    margin: 5px 15px 5px 0px;
+} .contents div, .contents p {
+    margin: 5px 5px 5px 0px;
+}
+
+/*********************************************
+ �CONES DE DENTRO DOS FORMS
+ *********************************************/
+a.icoField {
+    background-image: url(../images/icones.gif);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 19px;
+}
+
+a.remField {
+    background-position: 0 -121px;
+}
+
+a.sendMail {
+    background-image: url(../images/enviar.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 3px 0 3px;
+}
+
+a.sendMailP {
+    background-image: url(../images/enviarp.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 19px;
+    float: left;
+    margin: 4px;
+}
+
+/*********************************************
+AUTOCOMPLETAR
+ *********************************************/
+
+ul.autocompleter-choices
+{
+	position:				absolute;
+	margin:					0;
+	padding:				0;
+	list-style:				none;
+	border:					1px solid #7c7c7c;
+	border-left-color:		#c3c3c3;
+	border-right-color:		#c3c3c3;
+	border-bottom-color:	#ddd;
+	background-color:		#fff;
+	text-align:				left;
+	font-family:			Arial,Helvetica,sans-serif;
+	z-index:				50;
+	background-color:		#fff;
+}
+
+ul.autocompleter-choices li
+{
+	position:				relative;
+	margin:					-2px 0 0 0;
+	padding:				0.2em 1.5em 0.2em 1em;
+	display:				block;
+	float:					none !important; 
+	cursor:					pointer;
+	font-weight:			normal;
+	white-space:			nowrap;
+	font-size:				1em;
+	line-height:			1.5em;
+}
+
+ul.autocompleter-choices li.autocompleter-selected
+{
+	background-color:		#800000;
+	color:					#fff;
+}
+
+ul.autocompleter-choices span.autocompleter-queried
+{
+	display:				inline;
+	float:					none;
+	font-weight:			bold;
+	margin:					0;
+	padding:				0;
+}
+
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried
+{
+	color:					#9FCFFF;
+}
+div#conteudo div.textoVisualizar {
+	margin-left:123px
+}
+div#conteudo div.textoVisualizar p{
+	margin:0;
+}
+/*********************************************
+	SQUEEZE BOX
+ *********************************************/
+
+div#sbox-window h2{
+	padding: 3px 0 3px 0;
+	text-align:center;
+	color:#ffffff;
+	background-color:#BC0000;
+}
+div#sbox-window div#conteudo-sbox{
+	padding: 15px 8px 10px 8px;
+}
+div#sbox-window div#conteudo-sbox div.text{
+	margin-bottom:12px;
+}
+div#sbox-window div#conteudo-sbox div.text label{
+	border-bottom:1px solid #CFCFCF;
+	display:block;
+	float:left;
+	margin-right:2px;
+	padding-bottom:5px;
+	width:120px;
+	font-weight:bold;
+}
+div#sbox-window div#conteudo-sbox div.textoVisualizar {
+	margin-left:123px
+}

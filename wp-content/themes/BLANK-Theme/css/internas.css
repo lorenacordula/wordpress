@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+/* GERAL */
+div#conteudoint {
+	width: 785px;
+	margin-left: 21px;
+	background-color: #FFF;
+	float: left;
+	overflow: hidden;
+	padding: 0 0px 0 0px;
+}
+
+div#conteudoint div#texto {
+	width: 690px;
+	padding: 0 30px 0px 30px;
+}
+
+div#conteudoint div#texto img {
+	float: left;
+	border: 1px solid #01D1FE;
+	padding: 2px 2px 2px 2px;
+	margin: 0 15px 0 0;
+}
+
+div#conteudoint div.titulo {
+	margin: 0 0 30px 0;
+}
+
+div#conteudoint p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+div#conteudoint p a {
+	text-decoration: underline;
+	color: #028BA4;
+}
+
+div#conteudoint h2,div#conteudoint h2 a {
+	font-family: "Century Gothic";
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #036;
+	text-decoration: none;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+.lab-titulo {
+	margin-left: 20px;
+}
+
+
+
+
+div#conteudoint h3,div#conteudoint h3 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #8BB900;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div#conteudoint h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #8B7C3F;
+	text-decoration: none;
+}
+
+div#conteudoint h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+	margin: 5px 0 0 0;
+}
+
+div#conteudoint p a:hover,div#conteudoint h2 a:hover,div#conteudoint h6 a:hover,div#conteudoint div.noticia p a:hover
+	{
+	text-decoration: underline;
+}
+
+/* Noticia */
+div#conteudoint div.noticia {
+	width: auto;
+	padding: 0 30px 20px 40px;
+}
+
+div#conteudoint div.noticia p,div#conteudoint div.noticia p a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+
+/* Paginacao */
+div#conteudoint ol.pages {
+	width: 400px;
+	list-style-type: none;
+	list-style-image: none;
+	float: left;
+	margin: 30px 0px 20px 200px;
+	padding: 0px 0px 0px 0px;
+}
+
+div#conteudoint ol.pages li {
+	font-family: "Century Gothic";
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	float: left;
+	display: inline;
+	margin: 0 4px 0 0;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	color: #05527A;
+	font-variant: normal;
+}
+
+div#conteudoint ol.pages li a {
+	color: #05527A;
+	padding: 4px;
+	text-decoration: none;
+	float: left;
+}
+
+div#conteudoint ol.pages li a:hover {
+	color: #05527A;
+	background-color: #00B4FF;
+}
+
+div#conteudoint ol.pages li.nolink {
+	color: #CCC;
+	border: 1px solid #999999;
+	padding: 4px;
+}
+
+div#conteudoint ol.pages li.current {
+	color: #FFF;
+	padding: 4px;
+	background-color: #98BE14;
+	font-weight: bold;
+}
+
+div#conteudoint ol.pages li.ativo {
+	color: #FFF;
+	padding: 4px;
+	background-color: #98BE14;
+	font-weight: bold;
+}
+
+/* EVENTOS */
+div#conteudoint div.boxeventos {
+	width: 500px;
+	padding: 0 0px 0px 0px;
+	margin: 0 30px 0 0;
+	float: left;
+	clear: both;
+}
+
+div#conteudoint div.calendario {
+	float: left;
+	width: 150px;
+}
+
+div#conteudoint div.boxeventos p,div#conteudoint div.boxeventos p a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+
+/* GRADUACAO */
+div#conteudoint div#pdfgraduacao {
+	width: 600px;
+	height: auto;
+	background-image: url(../images/bot_divgraduac.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-color: #FAFAFB;
+	padding: 10px 20px 40px 20px;
+	margin: 20px 0 0 0;
+	float: left;
+}
+
+div#conteudoint div#pdfgraduacao p,div#conteudoint div#pdfgraduacao p a
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+div#conteudoint div#pdfgraduacao p a:hover {
+	background-color: #00B0DD;
+	color: #FFF;
+}
+
+div#conteudoint div#pdfgraduacao h3 {
+	font-family: "Century Gothic";
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #83AE00;
+	text-decoration: none;
+	font-weight: normal;
+	font-variant: normal;
+	margin-bottom: 8px;
+}
+
+div#conteudoint div#pdfgraduacao div#divleft {
+	width: 250px;
+	float: left;
+	margin: 0 100px 0 0;
+}
+
+div#conteudoint div#pdfgraduacao div#divright {
+	width: 250px;
+	float: left;
+}
+
+/* PESQUISA */
+div#conteudoint div.linhas,
+div#conteudoint div.linhas-lab {
+	clear:both;
+	width: auto;
+	padding: 0 0px 10px 0px;
+	margin: 10px 0 0 0;
+	background-image: url(../images/div_linetable.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+div#conteudoint div.linhas p,div#conteudoint div.linhas p a,
+div#conteudoint div.linhas p,div#conteudoint div.linhas-lab p a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+div#conteudoint div.linhas p a:hover,
+div#conteudoint div.linhas-lab p a:hover {
+	text-decoration: underline;
+}
+
+div#conteudoint div.linhas-lab {
+	margin-left: 20px;
+}
+
+
+/* REVISTAS */
+div#conteudoint div#texto div.menurevistas,
+div.menurevistas {
+	width: 650px;
+	padding: 10px 10px 10px 20px;
+	margin-bottom: 20px;
+	background-color: #E8E9EC;
+	background-image: url(../images/setamenurevista.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+}
+
+div.menurevistas {
+	margin-left: 20px;
+}
+
+div#conteudoint div#texto div.menurevistas select,
+div.menurevistas select {
+	background-color: #F5F5F5;
+	border: 1px solid #09C;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #09C;
+	float: right;
+	margin: 0 0 0 0;
+}
+
+div#conteudoint div.boxrevista {
+	width: auto;
+	padding: 0 0px 10px 0px;
+	margin: 20px 0 0 0;
+	background-image: url(../images/div_linetable.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	float: left;
+}
+
+div#conteudoint div.boxrevista .capa {
+	width: 190px;
+	float: left;
+	margin: 0;
+}
+
+div#conteudoint div.boxrevista .capa img {
+	width: 170px;
+	height: 240px;
+	margin-bottom: 20px;
+}
+
+div#conteudoint div.boxrevista .capa h5 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 22px;
+	background-color: #00A3D9;
+	padding: 2px;
+}
+
+div#conteudoint div.boxrevista .sumario {
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+div#conteudoint div.boxrevista p,div#conteudoint div.boxrevista p a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+div#conteudoint div.boxrevista h4,div#conteudoint div.boxrevista h4 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 18px;
+	font-variant: normal;
+}
+
+div#calendario{
+	border:solid 1px #a3a3a3;
+}
+
+div#calendario div#agenda_head{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+div#calendario div#agenda_tabela{
+	float: left;
+	clear: both;
+}
+
+div#calendario table th{
+	background-color: #857b79;
+	color: white;
+	margin:0;
+	padding: 1px;
+	width: 24px;
+	height: 18px;
+	text-align: center;
+}
+div#calendario table td{
+	width: 24px;
+	height: 18px;
+	text-align: center;
+}
+div#calendario table td.claro{
+	background-color: #feb6c4;
+	border: solid 1px;
+	margin:0;
+	padding: 1px;
+}
+
+div#calendario table td.claro a{
+	text-decoration: none;
+	color:black;
+	display: block;
+}
+
+div#calendario table td.fds{
+	background-color: #b9cbd9;
+}
+div.tip{
+	width: 165px;
+	border: 2px solid #857B79;
+	background-color: #FFF;
+}
+
+div.tip-title{
+	padding: 2px;
+	text-align: center;
+	background-color: #B9CBD9;
+	color: #FFF;
+}
+div.tip-text{
+	padding: 2px;
+}
+a.calend_seta{
+	display: block;
+	width: 8px;
+	height:12px;
+	background-image: url("../images/setas_calend.gif");	
+}
+a.esq{
+	background-position:  8px 0;
+	float: right;
+	margin-right: 5px;
+}
+a.dir{
+	margin-left: 5px;
+}
+
+div.contato {
+	margin:0;
+	padding:0;
+}
+
+div.contato ul{
+	margin:0;
+	padding:0;
+}
+
+div.contato li{
+	list-style:none;
+	display:block;
+	padding: 5px 0 0px 0;
+	float:left;
+	clear:both;
+	
+}
+
+
+
+div.contato li label{
+	font-size:11px;
+	color:#009DC4;
+	clear:both;
+	float:left;
+	margin:8px 0 3px 0;
+	font-weight: bold;
+}
+
+div.contato li input{
+	clear:both;
+	height:20px;
+	float:left;
+	font-size:11px;
+	color:#007CA5;
+	padding:3px 2px 0px 2px;
+	background-color: #EBEBEB;
+	font-family: Arial, Helvetica, sans-serif;
+	border:none;
+}
+div.contato li textarea{
+	clear:both;
+	float:left;
+	font-size:11px;
+	color:#007CA5;
+	padding:3px 2px 0px 2px;
+	background-color: #EBEBEB;
+	font-family: Arial, Helvetica, sans-serif;
+	border:none;
+}
+div.contato li input.btn{
+	width:75px;
+	height:27px;
+	float:left;
+	clear:none;
+	border:none;
+	margin-right:10px;
+	padding:0;
+}
+
+
+
+
+
+
+/* novas internas */
+
+.pg-links {
+	min-height: 400px;
+}
+
+.pg-links li {
+	margin: 30px 0 80px 60px;
+	list-style-type: none;
+	clear: both;
+
+}
+
+.pg-links li img {
+	float: left;
+	margin-bottom: 30px
+}
+
+.pg-links li p {
+	margin: 10px 0 0 10px;
+	position: relative;
+	float: left;
+}
+
+
+
+.pg-links li p a {
+	text-decoration: none;
+	color: #666;
+	margin-top: 20px;
+}
+
+	.pg-links li p a:hover {
+		text-decoration: underline;
+	}
+
+

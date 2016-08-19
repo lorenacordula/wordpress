@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS TABELAS */
+
+
+
+.tabela { font:11px Arial, Helvetica, sans-serif; width:700px; margin:0 0 5px 0; }
+
+.tabela thead th {
+	color:#077392;
+	text-align:left;
+	font-family: "Century Gothic";
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 8px;
+	background-image: url(../images/bg_form_thead.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	font-variant: normal;
+}
+
+.tabela tbody td {
+	color:#000;
+	padding:3px;
+	text-align:left;
+	vertical-align: middle;
+	padding: 10px;
+	background-image: url(../images/div_linetable.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.tabela tbody th {
+	color:#000;
+	padding:2px;
+	text-align:left;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.tabela tbody .odd th, .tabela tbody .odd td { background:none; background-color:#FFF; color:#000; }
+.tabela tbody tr:hover th, .tabela tbody .odd:hover th, .tabela tbody tr:hover td {
+	background-color:#F2F2F2;
+	color:#333;
+}
+.tabela tbody a { color:#000000; }
+.tabela a:hover {
+	color:#00B3B3;
+}
+
+

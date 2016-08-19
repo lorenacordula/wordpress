@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	/*
+		Montagem: 	Danielle Freitas 
+		Ano: 		2008
+	
+	*/
+	
+	
+	 *{
+	 	margin: 0;
+		padding: 0;			
+	 }
+	 body{
+	 	background-color: #FFFFFF;
+		background-image: url(../images/bg.jpg);
+		background-repeat: repeat-x;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		color: #122E36;
+	 }
+	 a img{
+	 	border: 0;
+	 }
+   	 div#geral,div#rodape-container{
+	 	width: 981px;
+		margin: 0 auto;	
+	 }
+	 	
+	div#principal{
+		width: 981px;
+		overflow: hidden;
+		
+	}
+	div#topo{
+		height: 269px;
+		margin-left: -4px;
+	}
+	div#esq,  div#conteudo{
+		float: left;
+		overflow: hidden;
+		
+		
+	}
+	div#esq{
+		width: 171px;
+	}
+	 div#conteudo{
+	 	width: 785px;
+		margin-left: 21px;
+		background-image: url(../images/bg_conteudo.gif);
+		background-repeat: no-repeat;
+		background-position:left  bottom;
+	 }
+	 
+	 /*
+	 	ESQUERDA
+	 */
+	 div#esq li{
+	 	list-style-type: none;	
+	 }
+	 
+	 div#esq ol.menu{
+	 	
+		
+		margin-bottom: 100px;
+	 }
+	 
+	 div#esq ol.menu li{
+		margin-bottom: 5px;
+	 }
+	 div#esq ol.menu li{
+	 	list-style-type: none;	
+		display: inline;
+	 }
+	 div#esq ol.menu li a{
+		 padding-left: 16px;
+		 display: block;
+		 width: 155px;
+		 font-family: "Century Gothic", arial;
+		 text-decoration: none;
+		 font-size: 14px;
+		 color:#122E36;
+		 margin-bottom:10px;
+	 }
+	 div#esq ol.menu li a:hover{
+	 	background-image: url(../images/seta-menu.gif);
+		background-repeat: no-repeat;
+	 }
+	 div.links {
+	 	padding-left: 16px;
+	 }
+	 div.links h2, div.links  li{
+	 	margin-bottom: 10px;
+	 }
+	 
+	 
+	 
+	 /*
+	 	RODAPÉ	 
+	 */
+	 div#rodape-geral{
+	 	clear: both;
+	 	background-image: url(../images/bg_rodape.jpg);
+		background-repeat: repeat-x;
+		background-color:#40B9D2;
+		margin-top: 30px;
+	 }
+	 div#rodape-container{
+	 	overflow: hidden;
+		padding: 30px 0px;
+		color:#FFFFFF;
+	 }
+	 
+	 div#rodape-container p{
+	 	margin-bottom: 5px;
+	 }
+	 div#rodape-container div.esq{
+	 	float: left;
+		background-image: url(../images/seta-rodape.gif);
+		background-repeat: no-repeat;
+		padding-left: 25px; 
+		margin-left: 20px;
+	 }
+	 
+	 div#rodape-container div.dir{
+	 	float: right;
+		padding-top: 20px;
+		text-align:right;
+		margin-right: 20px;
+	 }
+	 div#rodape-container div.dir a{
+	 	color: #FFFFFF;
+		text-decoration: none;
+	 }
+	 
+	/* Tabs */
+	div#conteudo_abas {
+		width: 690px;
+		float:left;
+		margin: 20px 0 20px 0;
+		padding: 0 0 0 0;
+	}
+	
+	div#conteudo_abas div.menu_abas {
+		width:345px;
+	}
+	
+	div#conteudo_abas .menu_abas li {
+		float:left;
+		list-style-type: none;
+		text-align:center;
+		display:inline;
+		font-family: Century Gothic;
+		font-size:14px;
+		color:#FFF;
+		background: url(../images/tabbt_pesquisa.jpg) top left no-repeat !important;
+		margin:0 3px 1px 0;
+		padding: 3px 20px 3px 20px;
+		cursor: pointer;
+	}
+	
+	div#conteudo_abas div.menu_abas li a {
+		font-family: Century Gothic !important;
+		font-size: 18px !important;
+		font-weight: normal !important;
+		color: #FFFFFF !important;
+		text-align:center;
+		text-decoration: none;
+		display:inline;
+		margin: 0;
+		padding: 5px 0 5px 0;
+	}
+	
+	div#conteudo_abas .menu_abas li.ligado {
+		float:left;
+		list-style-type: none;
+		text-align:center;
+		display:inline;
+		font-family: Century Gothic;
+		font-size:14px;
+		color:#FFF;
+		background: url(../images/tabbt_extensao.jpg) top left no-repeat !important;
+		margin:0 3px 1px 0;
+		padding: 3px 20px 3px 20px;
+		cursor: pointer;
+	}
+	
+	div#conteudo_abas div.caixa_conteudo {
+		width:690px;
+		height:auto;
+		float:left;
+		margin:0;
+		padding:20px 0 0 0;
+		background: url(../images/bg_tabbedinfo.gif) left top repeat-x;
+	}
+		 

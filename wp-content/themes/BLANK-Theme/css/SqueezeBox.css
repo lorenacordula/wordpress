@@ -1,0 +1,123 @@
+#sbox-window embed, #sbox-window object, #sbox-window select
+{
+	visibility:				visible;
+}
+
+#sbox-overlay
+{
+	position:				absolute;
+	background-color:		#000;
+}
+
+#sbox-window
+{
+	position:				absolute;
+	background-color:		#fff;
+	text-align:				left;
+	overflow:				visible;
+	padding:				10px;
+	-moz-border-radius:		3px;
+	-webkit-border-radius:	3px;
+}
+
+#sbox-btn-close
+{
+	position:				absolute;
+	width:					30px;
+	height:					30px;
+	right:					-15px;
+	top:					-15px;
+	background:				url(../images/closebox.png) no-repeat center;
+	border:					none;
+}
+
+.sbox-window-ie6 #sbox-btn-close
+{
+	background-image:		url(../images/closebox.gif);
+}
+
+.sbox-loading #sbox-content
+{
+	background-image:		url(../images/ajax-loader.gif);
+	background-repeat:		no-repeat;
+	background-position:	center;
+}
+
+#sbox-content
+{
+	clear:					both;
+	overflow:				auto;
+	background-color:		#fff;
+	height:					100%;
+	width:					100%;
+}
+
+.sbox-content-image#sbox-content
+{
+	overflow:				visible;
+}
+
+#sbox-image
+{
+	display:				block;
+}
+
+.sbox-content-image img
+{
+	display:				block;
+}
+
+.sbox-content-iframe#sbox-content
+{
+	overflow:				visible;
+}
+
+.body-overlayed embed, .body-overlayed object, .body-overlayed select
+{
+	visibility:				hidden;
+}
+
+div.dadosMovimentacao h2{
+	margin: 5px 0 5px 0;
+	text-align:center;
+	background-color:#1C631A;
+	color:white;
+}
+div.dadosMovimentacao h3{
+	margin: 10px 0 10px 0;
+	text-align:center;
+	background-color:#1C7F1A;
+	color:white;
+}
+div.dadosMovimentacao div.endereco{
+	padding:3px;
+	background-color:#EFEFEF;
+}
+
+div.dadosMovimentacao div.endereco h4{
+	margin: 5px 0 5px 0;
+	text-align:center;
+	background-color:#31AB2D;
+	color:white;
+}
+div.dadosMovimentacao p{
+	margin: 5px;
+}
+div.dadosMovimentacao p span{
+	font-weight:bold;
+}
+div.dadosMovimentacao input.btn {
+    border: 3px solid #1B7919;
+    background: #c0c0c0;
+    color: #800000;
+    cursor: pointer;
+}
+
+div.dadosMovimentacao div.auditoria {
+	background-color: #F0FFF0;
+	margin: 2px 0 2px 0;
+	padding: 3px 5px 3px 5px;
+}
+div.dadosMovimentacao div.auditoria p{
+	margin: 2px 0 2px 0;
+}
