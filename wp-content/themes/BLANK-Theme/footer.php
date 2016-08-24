@@ -4,7 +4,7 @@
 <div id="rodape-geral">
 	<div id="rodape-container" >
 		<div class="esq">
-        	<p><img src="wp-content/themes/BLANK-Theme/images/darq.gif" alt="DARQ - Departamento de arquitetura e urbanismo" /></p>
+        	<p><img src="<?php echo site_url(); ?>/wp-content/themes/BLANK-Theme/images/darq.gif" alt="DARQ - Departamento de arquitetura e urbanismo" /></p>
         	<p>UFRN | Centro de Tecnologia - CT<br />
             E-mail: darq@ct.ufrn.br<br />
 			Fone: 84  3215 3721</p>
